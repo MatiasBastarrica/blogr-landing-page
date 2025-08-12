@@ -1,4 +1,5 @@
 const navIcon = document.querySelector(".nav-icon");
+const navIconImg = navIcon.querySelector("img");
 const arrowLinks = document.querySelectorAll(".arrow-link");
 const dialog = document.querySelector("dialog");
 const mobileNav = (function () {
@@ -10,9 +11,11 @@ navIcon.addEventListener("click", () => {
   if (!mobileNav.isOpen) {
     dialog.show();
     mobileNav.isOpen = true;
+    navIconImg.setAttribute("src", "./images/icon-close.svg");
   } else {
     dialog.close();
     mobileNav.isOpen = false;
+    navIconImg.setAttribute("src", "./images/icon-hamburger.svg");
   }
 });
 
