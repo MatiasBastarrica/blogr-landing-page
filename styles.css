@@ -15,4 +15,13 @@
   /* # GRADIENT (BODY) # */
   --purple-950: hsl(237, 17%, 21%);
   --purple-900: hsl(237, 23%, 31%);
+
+  /* # TYPOGRAPHY # */
+  --ff-overpass: "Overpass", sans-serif;
+  --ff-Ubuntu: "Ubuntu", sans-serif;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
 }
