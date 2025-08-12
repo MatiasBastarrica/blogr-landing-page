@@ -25,3 +25,31 @@
   --fw-600: 600;
   --fw-700: 700;
 }
+
+/* ### CSS RESET ### */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+header nav ul,
+footer ul {
+  list-style: none;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
