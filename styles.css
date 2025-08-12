@@ -1,0 +1,18 @@
+/* ### CUSTOM PROPERTIES ### */
+
+:root {
+  /* # PRIMARY # */
+  --red-500: hsl(356, 100%, 66%);
+  --red-400: hsl(355, 100%, 74%);
+  --blue-900: hsl(208, 49%, 24%);
+  /* # NEUTRAL # */
+  --white: hsl(0, 100%, 100%);
+  --gray-600: hsl(207, 13%, 34%);
+  --gray-900: hsl(240, 10%, 16%);
+  /* # GRADIENT (INTRO/CTA) # */
+  --orange-300: hsl(13, 100%, 72%);
+  --red-550: hsl(353, 100%, 62%);
+  /* # GRADIENT (BODY) # */
+  --purple-950: hsl(237, 17%, 21%);
+  --purple-900: hsl(237, 23%, 31%);
+}
