@@ -53,3 +53,11 @@ svg {
   max-width: 100%;
   display: block;
 }
+
+/* ### UTILITY CLASSES ### */
+
+.btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  padding: 1rem 1.5rem;
+}
