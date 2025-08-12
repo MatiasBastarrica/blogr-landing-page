@@ -1,5 +1,20 @@
 const navIcon = document.querySelector(".nav-icon");
 const arrowLinks = document.querySelectorAll(".arrow-link");
+const dialog = document.querySelector("dialog");
+const mobileNav = (function () {
+  let isOpen = false;
+  return { isOpen };
+})();
+
+navIcon.addEventListener("click", () => {
+  if (!mobileNav.isOpen) {
+    dialog.show();
+    mobileNav.isOpen = true;
+  } else {
+    dialog.close();
+    mobileNav.isOpen = false;
+  }
+});
 
 arrowLinks.forEach((arrowLink) => {
   const innerNavState = (function () {
