@@ -66,3 +66,16 @@ svg {
 .hide {
   display: none;
 }
+/* ### GENERAL STYLING ### */
+
+body {
+  font-family: var(--ff-Ubuntu);
+  font-weight: var(--fw-400);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-overpass);
+  font-weight: var(--fw-600);
+}
