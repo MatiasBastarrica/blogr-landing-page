@@ -57,7 +57,12 @@ svg {
 /* ### UTILITY CLASSES ### */
 
 .btn {
-  background-color: var(--btn-bg);
+  background: var(--btn-bg);
   color: var(--btn-color);
   padding: 1rem 1.5rem;
+  border-radius: 200px;
+}
+
+.hide {
+  display: none;
 }
