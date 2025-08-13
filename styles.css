@@ -255,7 +255,7 @@ dialog > nav > ul {
 
 .design__grid-content p {
   margin-top: 1rem;
-  line-height: 1.5;
+  line-height: 1.8;
   color: var(--gray-600);
 }
 
@@ -318,4 +318,39 @@ dialog > nav > ul {
 .state__grid-img {
   grid-area: img;
   margin-top: -231px;
+}
+
+/* ### "FEATURES" SECTION ### */
+
+.features-section {
+  margin-bottom: 5rem;
+}
+
+.features__grid {
+  display: grid;
+  grid-template-areas: "img" "content";
+  text-align: center;
+}
+
+.features__grid-content {
+  grid-area: content;
+}
+
+.features__grid-content h2 {
+  font-size: 1.8rem;
+  color: var(--blue-900);
+}
+
+.features__grid-content h2:nth-of-type(2) {
+  margin-top: 2rem;
+}
+
+.features__grid-content p {
+  margin-top: 1rem;
+  line-height: 1.8;
+  color: var(--gray-600);
+}
+
+.features__grid-img {
+  grid-area: img;
 }
