@@ -213,6 +213,7 @@ dialog > nav > ul {
   display: flex;
   gap: 1rem;
   font-weight: var(--fw-700);
+  justify-content: center;
 }
 
 .intro__buttons-container a:first-child {
@@ -399,6 +400,30 @@ footer h2 {
 /* ### MEDIA QUERIES ### */
 
 @media (min-width: 50em) {
+  /* # DESIGN SECTION # */
+
+  .design-section {
+    text-align: start;
+    position: relative;
+  }
+
+  .design-section h2 {
+    text-align: center;
+  }
+
+  .design__grid {
+    margin-top: 6rem;
+    grid-template-areas: "content img";
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .design__grid-img {
+    position: absolute;
+    right: -239px;
+    width: 850px;
+  }
+
   /* # FOOTER # */
 
   .container {
