@@ -80,9 +80,11 @@ arrowLinksDesktop.forEach((arrowLinkDesktop) => {
           if (!desktopNav[innerNavContainerStatus]["isOpen"]) {
             innerNavContainer.classList.remove("hide");
             desktopNav[innerNavContainerStatus]["isOpen"] = true;
+            arrowIcon.style.transform = "rotate(180deg)";
           } else {
             innerNavContainer.classList.add("hide");
             desktopNav[innerNavContainerStatus]["isOpen"] = false;
+            arrowIcon.style.transform = "rotate(0deg)";
           }
         }
       }
