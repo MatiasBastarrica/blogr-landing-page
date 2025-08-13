@@ -126,6 +126,10 @@ header .logo-container {
   justify-content: center;
 }
 
+.arrow-link:hover {
+  text-decoration: underline;
+}
+
 .arrow-icon {
   width: 10px;
   height: 7px;
@@ -185,6 +189,15 @@ dialog > nav > ul {
   color: var(--gray-600);
 }
 
+.inner-nav a:hover {
+  color: var(--gray-900);
+}
+
+dialog a.btn:hover {
+  --btn-color: var(--white);
+  --btn-bg: #ff7b86;
+}
+
 .desktop-nav {
   display: none;
 }
@@ -214,6 +227,16 @@ dialog > nav > ul {
   gap: 1rem;
   font-weight: var(--fw-700);
   justify-content: center;
+}
+
+.intro__buttons-container a:first-child:hover {
+  --btn-color: var(--white);
+  --btn-bg: #ff7b86;
+}
+
+.intro__buttons-container a:last-child:hover {
+  --btn-color: var(--red-500);
+  --btn-bg: var(--white);
 }
 
 .intro__buttons-container a:first-child {
@@ -425,16 +448,6 @@ footer h2 {
     height: 3174px;
     top: -1355px;
     left: -408px;
-  }
-
-  .intro__buttons-container a:first-child:hover {
-    --btn-color: var(--white);
-    --btn-bg: #ff7b86;
-  }
-
-  .intro__buttons-container a:last-child:hover {
-    --btn-color: var(--red-500);
-    --btn-bg: var(--white);
   }
 
   .arrow-icon {
