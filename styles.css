@@ -400,6 +400,75 @@ footer h2 {
 /* ### MEDIA QUERIES ### */
 
 @media (min-width: 50em) {
+  /* # INTRO SECTION # */
+
+  .arrow-icon {
+    background-image: url(./images/icon-arrow-light.svg);
+  }
+
+  header {
+    min-height: 385px;
+    color: var(--white);
+  }
+
+  header .container {
+    align-items: center;
+    justify-content: unset;
+    gap: 2rem;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+    flex-grow: 1;
+  }
+
+  .desktop-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .desktop-nav .separator {
+    margin-inline-start: auto;
+  }
+  .desktop-nav ul li:last-child a {
+    /* display: inline; */
+    --btn-color: var(--red-500);
+    --btn-bg: var(--white);
+    padding: 0.5rem 1.8rem;
+  }
+
+  .arrow-link-desktop {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .list-item-desktop-nav {
+    position: relative;
+  }
+
+  .inner-nav-container-desktop {
+    position: absolute;
+    left: -50px;
+  }
+
+  .inner-nav-desktop {
+    margin-top: 1.3rem;
+    background-color: #efeff1;
+    padding: 2rem 1.5rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-size: 1.125rem;
+    color: var(--gray-600);
+  }
+
   /* # STATE SECTION # */
 
   .state-section {

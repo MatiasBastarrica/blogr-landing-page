@@ -38,3 +38,78 @@ arrowLinks.forEach((arrowLink) => {
     }
   });
 });
+
+const desktopNav = (function () {
+  const innerNavContainers = document.querySelectorAll(
+    ".inner-nav-container-desktop"
+  );
+
+  const listItems = {};
+
+  for (let i = 0; i < innerNavContainers.length; i++) {
+    const innerNavContainer = innerNavContainers[i];
+    listItems[`listItem${i + 1}`] = {
+      element: innerNavContainer,
+      isOpen: false,
+    };
+  }
+
+  return listItems;
+})();
+
+const arrowLinksDesktop = document.querySelectorAll(".arrow-link-desktop");
+
+arrowLinksDesktop.forEach((arrowLinkDesktop) => {
+  // const innerNavDesktopState = (function () {
+  //   let isOpen = false;
+  //   return { isOpen };
+  // })();
+
+  const innerNavContainerDesktop = arrowLinkDesktop.nextElementSibling;
+  const arrowIcon = arrowLinkDesktop.querySelector(".arrow-icon");
+
+  arrowLinkDesktop.addEventListener("click", () => {
+    // if (!innerNavDesktopState.isOpen) {
+    //   for (const listItem in desktopNav) {
+    //     if (Object.prototype.hasOwnProperty.call(desktopNav, listItem)) {
+    //       const innerNavContainer = desktopNav[listItem];
+    //       if (!innerNavContainer.classList.contains("hide")) {
+    //         innerNavContainer.classList.add("hide");
+    //         innerNavDesktopState.isOpen = false;
+    //       }
+    //     }
+    //   }
+    //   innerNavContainerDesktop.classList.remove("hide");
+    //   innerNavDesktopState.isOpen = true;
+    //   arrowIcon.style.transform = "rotate(180deg)";
+    // } else {
+    //   innerNavContainerDesktop.classList.add("hide");
+    //   innerNavDesktopState.isOpen = false;
+    //   arrowIcon.style.transform = "rotate(0deg)";
+    // }
+
+    for (const innerNavContainerStatus in desktopNav) {
+      if (
+        Object.prototype.hasOwnProperty.call(
+          desktopNav,
+          innerNavContainerStatus
+        )
+      ) {
+        const innerNavContainer =
+          desktopNav[innerNavContainerStatus]["element"];
+        if (innerNavContainerDesktop !== innerNavContainer) {
+          innerNavContainer.classList.add("hide");
+          desktopNav[innerNavContainerStatus]["isOpen"] = false;
+        } else {
+          if (!desktopNav[innerNavContainerStatus]["isOpen"]) {
+            innerNavContainer.classList.remove("hide");
+            desktopNav[innerNavContainerStatus]["isOpen"] = true;
+          } else {
+            innerNavContainer.classList.add("hide");
+            desktopNav[innerNavContainerStatus]["isOpen"] = false;
+          }
+        }
+      }
+    }
+  });
+});
