@@ -402,12 +402,32 @@ footer h2 {
 @media (min-width: 50em) {
   /* # INTRO SECTION # */
 
+  .intro-section h1 {
+    max-width: unset;
+    font-size: 3.8rem;
+  }
+
+  .intro-section p {
+    font-size: 1.4rem;
+  }
+
+  .intro-container {
+    background: linear-gradient(to left, var(--red-550), var(--orange-300));
+  }
+
+  .intro-container::before {
+    background-image: url(./images/bg-pattern-intro-desktop.svg);
+    width: 3175px;
+    height: 3174px;
+    top: -1355px;
+    left: -408px;
+  }
+
   .arrow-icon {
     background-image: url(./images/icon-arrow-light.svg);
   }
 
   header {
-    min-height: 385px;
     color: var(--white);
   }
 
