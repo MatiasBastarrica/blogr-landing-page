@@ -354,3 +354,40 @@ dialog > nav > ul {
 .features__grid-img {
   grid-area: img;
 }
+
+/* ### FOOTER ### */
+
+footer {
+  background-color: var(--gray-900);
+  color: #dddde5;
+  text-align: center;
+  padding-block: 6rem;
+  border-start-end-radius: 6rem;
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.footer__row .ft-item:first-child {
+  margin-bottom: 2rem;
+}
+
+footer .logo-container img {
+  margin-inline: auto;
+}
+
+footer h2 {
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  font-size: 1.235rem;
+}
+
+.ft-item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.125rem;
+}
