@@ -400,6 +400,26 @@ footer h2 {
 /* ### MEDIA QUERIES ### */
 
 @media (min-width: 50em) {
+  /* # FEATURES SECTION # */
+
+  .features-section {
+    position: relative;
+    padding-block: 14rem;
+  }
+
+  .features__grid {
+    grid-template-areas: "img content";
+    grid-template-columns: 1fr 1fr;
+    text-align: start;
+    align-items: center;
+    gap: 0;
+  }
+
+  .features__grid-img {
+    position: absolute;
+    left: -276px;
+  }
+
   /* # DESIGN SECTION # */
 
   .design-section {
