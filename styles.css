@@ -66,6 +66,11 @@ svg {
 .hide {
   display: none;
 }
+
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
 /* ### GENERAL STYLING ### */
 
 body {
@@ -107,7 +112,7 @@ h3 {
 header .container {
   display: flex;
   justify-content: space-between;
-  padding: 2.5rem 1rem;
+  padding-block: 2.5rem;
 }
 
 .arrow-link {
@@ -214,4 +219,46 @@ dialog > nav > ul {
 .intro__buttons-container a:last-child {
   --btn-color: var(--white);
   border: 1px solid var(--white);
+}
+
+/* ### "DESIGN" SECTION ### */
+
+.design-section {
+  padding-block: 8rem;
+  text-align: center;
+}
+
+.design-section h2 {
+  font-size: 1.8rem;
+  color: var(--blue-900);
+}
+
+.design__grid {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-areas: "img" "content";
+  gap: 2.5rem;
+}
+
+.design__grid-content {
+  grid-area: content;
+}
+
+.design__grid-content h3 {
+  font-size: 1.8rem;
+  color: var(--blue-900);
+}
+
+.design__grid-content h3:nth-of-type(2) {
+  margin-top: 2rem;
+}
+
+.design__grid-content p {
+  margin-top: 1rem;
+  line-height: 1.5;
+  color: var(--gray-600);
+}
+
+.design__grid-img {
+  grid-area: img;
 }
