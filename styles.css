@@ -115,6 +115,10 @@ header .container {
   padding-block: 2.5rem;
 }
 
+header .logo-container {
+  flex-shrink: 0;
+}
+
 .arrow-link {
   display: flex;
   gap: 0.5rem;
@@ -390,4 +394,19 @@ footer h2 {
   flex-direction: column;
   gap: 0.8rem;
   font-size: 1.125rem;
+}
+
+/* ### MEDIA QUERIES ### */
+
+@media (min-width: 50em) {
+  /* # FOOTER # */
+
+  .container {
+    width: 80%;
+  }
+
+  footer .footer__row {
+    flex-direction: row;
+    gap: 15%;
+  }
 }
