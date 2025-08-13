@@ -262,3 +262,60 @@ dialog > nav > ul {
 .design__grid-img {
   grid-area: img;
 }
+
+/* ### "STATE" ECTION ### */
+
+.state-section {
+  margin: 14rem 0 6rem;
+  background: linear-gradient(to bottom, var(--purple-950), var(--purple-900));
+  border-start-end-radius: 6rem;
+  border-end-start-radius: 6rem;
+  padding: 4rem 0 8rem;
+  color: var(--white);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.state-section::before {
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  border-start-end-radius: 6rem;
+  content: "";
+  display: block;
+  width: 100%;
+  max-width: 375px;
+  height: 379px;
+  background-image: url(./images/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: top -250px left -119px;
+  background-size: 161%;
+}
+
+.state__grid {
+  display: grid;
+  grid-template-areas: "img" "content";
+  gap: 1.5rem;
+}
+
+.state__grid-content {
+  grid-area: content;
+}
+
+.state__grid-content h2 {
+  font-size: 2.425rem;
+}
+
+.state__grid-content p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #d9d9f1;
+  margin-top: 1.5rem;
+}
+
+.state__grid-img {
+  grid-area: img;
+  margin-top: -231px;
+}
