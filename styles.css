@@ -442,31 +442,19 @@ footer h2 {
 /* ### MEDIA QUERIES ### */
 
 @media (min-width: 80em) {
-  h3 {
-    max-width: unset;
-    margin-inline: unset;
-  }
-  /* # INTRO SECTION # */
-
-  .intro-section h1 {
-    max-width: unset;
-  }
-
-  .intro-container {
-    background: linear-gradient(to left, var(--red-550), var(--orange-300));
-  }
-
-  .intro-container::before {
-    background-image: url(./images/bg-pattern-intro-desktop.svg);
-    width: 3175px;
-    height: 3174px;
-    top: -1355px;
-    left: -408px;
+  .container {
+    width: 80%;
   }
 
   .arrow-icon {
     background-image: url(./images/icon-arrow-light.svg);
   }
+
+  h3 {
+    max-width: unset;
+    margin-inline: unset;
+  }
+  /* # INTRO SECTION # */
 
   header {
     color: var(--white);
@@ -549,6 +537,52 @@ footer h2 {
     color: var(--gray-900);
   }
 
+  .intro-section h1 {
+    max-width: unset;
+  }
+
+  .intro-container {
+    background: linear-gradient(to left, var(--red-550), var(--orange-300));
+  }
+
+  .intro-container::before {
+    background-image: url(./images/bg-pattern-intro-desktop.svg);
+    width: 3175px;
+    height: 3174px;
+    top: -1355px;
+    left: -408px;
+  }
+
+  /* # DESIGN SECTION # */
+
+  .design-section {
+    text-align: start;
+    position: relative;
+    overflow: hidden;
+    padding-block: 12rem;
+  }
+
+  .design-section h2 {
+    text-align: center;
+  }
+
+  .design__grid-content h3:nth-of-type(2) {
+    margin-top: 3.5rem;
+  }
+
+  .design__grid {
+    margin-top: 6rem;
+    grid-template-areas: "content img";
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .design__grid-img {
+    position: absolute;
+    right: -239px;
+    width: 850px;
+  }
+
   /* # STATE SECTION # */
 
   .state-section {
@@ -599,44 +633,10 @@ footer h2 {
     left: -276px;
   }
 
-  /* # DESIGN SECTION # */
-
-  .design-section {
-    text-align: start;
-    position: relative;
-    overflow: hidden;
-    padding-block: 12rem;
-  }
-
-  .design-section h2 {
-    text-align: center;
-  }
-
-  .design__grid-content h3:nth-of-type(2) {
-    margin-top: 3.5rem;
-  }
-
-  .design__grid {
-    margin-top: 6rem;
-    grid-template-areas: "content img";
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
-
-  .design__grid-img {
-    position: absolute;
-    right: -239px;
-    width: 850px;
-  }
-
   /* # FOOTER # */
 
   footer {
     text-align: start;
-  }
-
-  .container {
-    width: 80%;
   }
 
   footer .footer__row {
