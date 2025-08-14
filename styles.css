@@ -222,12 +222,12 @@ dialog a.btn:hover {
   max-width: 15ch;
   text-wrap: balance;
   margin-inline: auto;
-  font-size: 2.125rem;
+  font-size: clamp(2.125rem, 1.5352rem + 2.5164vw, 3.8rem);
 }
 
 .intro-section p {
   margin-top: 1rem;
-  font-size: 1.125rem;
+  font-size: clamp(1.125rem, 1.0282rem + 0.4131vw, 1.4rem);
   color: #efeff1;
 }
 
@@ -267,7 +267,7 @@ dialog a.btn:hover {
 }
 
 .design-section h2 {
-  font-size: 1.8rem;
+  font-size: clamp(1.8rem, 1.5535rem + 1.0516vw, 2.5rem);
   color: var(--blue-900);
 }
 
@@ -296,6 +296,7 @@ dialog a.btn:hover {
   margin-top: 1rem;
   line-height: 1.8;
   color: var(--gray-600);
+  font-size: clamp(1rem, 0.9648rem + 0.1502vw, 1.1rem);
 }
 
 .design__grid-img {
@@ -390,6 +391,7 @@ dialog a.btn:hover {
   margin-top: 1rem;
   line-height: 1.8;
   color: var(--gray-600);
+  font-size: clamp(1rem, 0.9648rem + 0.1502vw, 1.1rem);
 }
 
 .features__grid-img {
@@ -441,17 +443,13 @@ footer h2 {
 
 @media (min-width: 70em) {
   h3 {
+    max-width: unset;
     margin-inline: unset;
   }
   /* # INTRO SECTION # */
 
   .intro-section h1 {
     max-width: unset;
-    font-size: 3.8rem;
-  }
-
-  .intro-section p {
-    font-size: 1.4rem;
   }
 
   .intro-container {
@@ -607,6 +605,10 @@ footer h2 {
 
   .design-section h2 {
     text-align: center;
+  }
+
+  .design__grid-content h3:nth-of-type(2) {
+    margin-top: 3.5rem;
   }
 
   .design__grid {
