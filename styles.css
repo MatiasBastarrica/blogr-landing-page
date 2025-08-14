@@ -85,6 +85,16 @@ h3 {
   font-weight: var(--fw-600);
 }
 
+h3 {
+  max-width: 15ch;
+  margin-inline: auto;
+}
+
+p {
+  max-width: 65ch;
+  margin-inline: auto;
+}
+
 /* ### INTRO SECTION ### */
 
 .intro-container {
@@ -266,6 +276,7 @@ dialog a.btn:hover {
   display: grid;
   grid-template-areas: "img" "content";
   gap: 2.5rem;
+  justify-items: center;
 }
 
 .design__grid-content {
@@ -326,6 +337,7 @@ dialog a.btn:hover {
   display: grid;
   grid-template-areas: "img" "content";
   gap: 1.5rem;
+  justify-items: center;
 }
 
 .state__grid-content {
@@ -358,6 +370,7 @@ dialog a.btn:hover {
   display: grid;
   grid-template-areas: "img" "content";
   text-align: center;
+  justify-items: center;
 }
 
 .features__grid-content {
@@ -426,7 +439,10 @@ footer h2 {
 
 /* ### MEDIA QUERIES ### */
 
-@media (min-width: 50em) {
+@media (min-width: 70em) {
+  h3 {
+    margin-inline: unset;
+  }
   /* # INTRO SECTION # */
 
   .intro-section h1 {
